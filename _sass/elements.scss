@@ -1,0 +1,116 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	min-width: 380px;
+}
+
+html {
+	background: #000;
+}
+
+body {
+	background: #fff;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	padding: 0;
+	margin: 0 0 20px 0;
+	font-size: 3.5em;
+}
+
+h2 {
+	font-size: 3em;
+	text-align: center;
+	margin: 0;
+}
+
+h3 {
+	font-size: 1.8em;
+	margin: 20px 0 20px 0;
+}
+
+p {
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+nav {
+	background: rgba(0, 0, 0, .8);
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	color: #fff;
+	z-index: 999;
+	line-height: 0;
+
+	.button a {
+		padding: 13px;
+		font-size: .8em;
+	}
+}
+
+header {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+
+	.button a {
+		text-shadow: none;
+		font-size: 1.4em;
+	}
+}
+
+section {
+	padding: 60px 0;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 500px;
+	margin: 0 auto;
+
+	input[type="text"] {
+		flex-grow: 1;
+	}
+
+	input[type="submit"] {
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+}
+
+.button a, input[type="submit"], input[type="text"] {
+	border: 0;
+	padding: 15px;
+	box-sizing: content-box;
+	font-size: 1em;
+	font-weight: 100;
+}
+
+.button a, input[type="submit"] {
+	background: #5cb85c;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 0 2px 0 0 #408040;
+}
+
+.button a {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 3px;
+
+	&:hover {
+	}
+}
