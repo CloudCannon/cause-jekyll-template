@@ -6,28 +6,27 @@ html, body {
 	min-width: 380px;
 }
 
-html {
-	background: #000;
-}
-
-body {
-	background: #fff;
-}
-
 img {
 	max-width: 100%;
+}
+
+hr {
+	height:1px;
+	border: 0;
+	background-color: #ddd;
+	margin-bottom: 50px;
 }
 
 h1 {
 	padding: 0;
 	margin: 0 0 20px 0;
-	font-size: 3.5em;
+	font-size: 3em;
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 2.3em;
+	margin: 0 0 30px 0;
 	text-align: center;
-	margin: 0;
 }
 
 h3 {
@@ -38,36 +37,14 @@ h3 {
 p {
 	font-size: 1.3em;
 	line-height: 1.4em;
+	color: #888;
 }
 
 nav {
-	background: rgba(0, 0, 0, .8);
-	padding: 10px 0;
-	position: fixed;
-	width: 100%;
-	color: #fff;
-	z-index: 999;
-	line-height: 0;
-
-	.button a {
-		padding: 13px;
-		font-size: .8em;
-	}
-}
-
-header {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	color: #fff;
-	text-shadow: 1px 1px 1px #000;
-
-	.button a {
-		text-shadow: none;
-		font-size: 1.4em;
+	padding: 30px 0;
+	svg {
+		fill: $brand-color;
+		height: 35px;
 	}
 }
 
@@ -77,40 +54,59 @@ section {
 
 form {
 	display: flex;
-	flex-wrap: wrap;
 	max-width: 500px;
 	margin: 0 auto;
 
 	input[type="text"] {
 		flex-grow: 1;
+		flex-shrink: 1;
+		width: 100%;
+		border: 1px solid #ddd;
+
+
+		&, &:focus {
+			border-top-left-radius: 30px;
+			border-bottom-left-radius: 30px;
+		}
+
+		&:focus {
+			box-shadow: 0 0 5px 0 $brand-color;
+			outline: none;
+		}
 	}
 
 	input[type="submit"] {
-		border-top-right-radius: 5px;
-		border-bottom-right-radius: 5px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+
+		&:hover {
+			background: darken($brand-color, 5%);
+		}
 	}
 }
 
 .button a, input[type="submit"], input[type="text"] {
 	border: 0;
-	padding: 15px;
+	padding: 15px 40px;
 	box-sizing: content-box;
 	font-size: 1em;
 	font-weight: 100;
 }
 
 .button a, input[type="submit"] {
-	background: #5cb85c;
+	background: $brand-color;
 	color: #fff;
 	cursor: pointer;
-	box-shadow: 0 2px 0 0 #408040;
+	font-weight: bold;
 }
 
 .button a {
 	display: inline-block;
 	text-decoration: none;
-	border-radius: 3px;
+	border-radius: 30px;
+	transition: 200ms ease-in background;
 
 	&:hover {
+		background: darken($brand-color, 5%);
 	}
 }
