@@ -1,10 +1,33 @@
+# ----
+# Site
+
+title: Cause Template
 url: https://clean-oryx.cloudvent.net
 baseurl:
 google_analytics_key:
 
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Jekyll template with example content for a not-for-profit organisation.
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+social:
+  name: Cause Template
+  links:
+    - https://github.com/CloudCannon/cause-jekyll-template
+
+# -----
+# Build
+
 collections:
   staff_members:
     _hide_content: true
+    _options:
+      image:
+        width: 250
+        height: 250
 
 permalink: pretty
 
@@ -15,6 +38,10 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      _options:
+        content:
+          width: 1880
+          height: 1880
   -
     scope:
       path: ""
@@ -23,3 +50,24 @@ defaults:
 
 donation_embed: '<script src="https://donorbox.org/widget.js" type="text/javascript"></script><iframe src="https://donorbox.org/embed/give-sheep-the-vote?hide_donation_meter=true" height="685px" width="100%" style="max-width:425px; min-width:310px" seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no"></iframe>'
 newsletter_action: "//your-mailchimp-action-url.com"
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+_options:
+  header_background_image:
+    width: 1880
+    height: 1880
+  newsletter_background_image:
+    width: 1880
+    height: 1880
