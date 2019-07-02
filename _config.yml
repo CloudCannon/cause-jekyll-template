@@ -25,6 +25,7 @@ timezone: Etc/UTC
 
 collections:
   staff_members:
+    _icon: account_circle
     _hide_content: true
     _options:
       image:
@@ -44,6 +45,7 @@ defaults:
         content:
           width: 1880
           height: 1880
+          uploads_dir: "/images/posts/"
   -
     scope:
       path: ""
