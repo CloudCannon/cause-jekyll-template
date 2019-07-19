@@ -1,16 +1,13 @@
 ---
 layout: default
-title: The Sheep Vote
+title: HucklowNet
 ---
 <header>
 	<div class="container">
 		<div class="column">
 			<div>
-				<h1 class="editable">Give sheep the vote</h1>
-				<p class="editable">Sheep are the backbone of the economy yet they receive no compensation.</p>
-				<div class="button">
-					<a href="#donate">Donate Now</a>
-				</div>
+				<h1 class="editable">HucklowNet</h1>
+				<p class="editable">Rural internet connectivity.</p>
 			</div>
 		</div>
 		<div class="column">
@@ -20,25 +17,27 @@ title: The Sheep Vote
 </header>
 
 <div class="container">
-	<h2 class="editable" style="text-align: center;">Why sheep need the vote</h2>
+	<h2 class="editable" style="text-align: center;">Why rural communities need good broadband</h2>
 
 	<ul class="thirds">
 		<li>
 			<div class="image">{% include icons/site.html icon="population" %}</div>
-			<h3 class="editable">Population</h3>
-			<p class="editable">New Zealand has a human population of just 4.5M while there are 70M sheep. </p>
+			<h3 class="editable">Community</h3>
+			<p class="editable">Keeping local communities connected is essential to maintain the sustainability of the area.
+			</p>
 		</li>
 
 		<li>
 			<div class="image">{% include icons/site.html icon="economy" %}</div>
 			<h3 class="editable">Economy</h3>
-			<p class="editable">Sheep are the backbone of the economy yet they receive no compensation.</p>
+			<p class="editable">Local businesses cannot expand, or even start in the Peak Park without good connectivity.</p>
 		</li>
 
 		<li>
 			<div class="image">{% include icons/site.html icon="conditions" %}</div>
-			<h3 class="editable">Work Conditions</h3>
-			<p class="editable">Sheep are forced to eat grass every day of their life. How about some of variety?</p>
+			<h3 class="editable">Environment</h3>
+			<p class="editable">Enabling people to work from home, and to work for business in the local area, reduces carbon
+				footprints.</p>
 		</li>
 	</ul>
 </div>
@@ -51,7 +50,12 @@ title: The Sheep Vote
 		<div>
 			<h2 class="editable">Our Mission</h2>
 
-			<p class="editable">Leave no sheep behind. Our mission to give sheep the right to vote and have them represented in parliament. For too long sheep have been exploited for their warm wool and delicious meat. It's time to put our hooves down and baa for what's right. Give sheep the vote!</p>
+			<p class="editable">We are focused on providing reliable, superfast, next generation access internet connectivity
+				for the Great Hucklow parish.</p>
+			<p class="editable">We currently provide fibre connectivity to the villages of Great Hucklow, Grindlow, Abney, and
+				Abney Grange.</p>
+			<p class="editable">Recently we have connected the local Gliding Club, at the top of Burs Mount.</p>
+			<p class="editable">If you live or work in the area please contact us .</p>
 		</div>
 	</div>
 </div>
@@ -59,7 +63,7 @@ title: The Sheep Vote
 <div class="container">
 	<hr>
 	<blockquote>
-		<p class="quote editable">The ultimate measure of a sheep is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.</p>
+		<p class="quote editable">We have alabajskjbasjkasf is.</p>
 		<div class="attribute">
 			<p class="meta">
 				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/wooly.jpg" alt="Wooly"></span>
@@ -72,10 +76,11 @@ title: The Sheep Vote
 <div class="darker">
 	<div class="container">
 		<h2 class="editable">Join us</h2>
-		<p class="editable" style="text-align: center;">Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
+		<p class="editable" style="text-align: center;">Sign up to hear the latest news and progress in our fight for the
+			sheep vote.</p>
 		<form action="{{ site.newsletter_action }}" method="post">
 			<input type="text" name="EMAIL" placeholder="Email">
-			<input type="submit" value="Sign up"/>
+			<input type="submit" value="Sign up" />
 		</form>
 	</div>
 </div>
@@ -90,19 +95,21 @@ title: The Sheep Vote
 <div class="darker">
 	<div class="container">
 		<h2 class="editable">Updates</h2>
-		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a>
+		</p>
 		<div class="posts">
 			{% for post in site.posts %}
-				<div class="post">
-					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
-					<div class="post-content">
-						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
-						<h3>{{ post.title }}</h3>
+			<div class="post">
+				<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+				<div class="post-content">
+					<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+					<h3>{{ post.title }}</h3>
 
-						{{ post.content }}
-						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
-					</div>
+					{{ post.content }}
+					<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong>
+							Edit Update</a></p>
 				</div>
+			</div>
 			{% endfor %}
 		</div>
 	</div>
