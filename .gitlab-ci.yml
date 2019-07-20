@@ -1,0 +1,8 @@
+image: docker:git
+services:
+- docker:dind
+
+build:
+  script:
+  - docker build -t hucklownet-www .
+  - docker push hucklownet-www
