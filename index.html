@@ -1,15 +1,15 @@
 ---
 layout: default
-title: The Sheep Vote
+title: Discuss JEP 411
 ---
 <header>
 	<div class="container">
 		<div class="column">
 			<div>
-				<h1 class="editable">Give sheep the vote</h1>
-				<p class="editable">Sheep are the backbone of the economy yet they receive no compensation.</p>
+				<h1 class="editable">Discuss JEP 411</h1>
+				<p class="editable">JEP 411 is named "Deprecate the Security Manager for Removal". A non-goal is to provide an alternative.</p>
 				<div class="button">
-					<a href="#donate">Donate Now</a>
+					<a href="#joinus">Discuss Now</a>
 				</div>
 			</div>
 		</div>
@@ -20,25 +20,25 @@ title: The Sheep Vote
 </header>
 
 <div class="container">
-	<h2 class="editable" style="text-align: center;">Why sheep need the vote</h2>
+	<h2 class="editable" style="text-align: center;">Why the Security Manager</h2>
 
 	<ul class="thirds">
 		<li>
 			<div class="image">{% include icons/site.html icon="population" %}</div>
-			<h3 class="editable">Population</h3>
-			<p class="editable">New Zealand has a human population of just 4.5M while there are 70M sheep. </p>
+			<h3 class="editable">Hackers</h3>
+			<p class="editable">There is a hacker attack every 39 seconds. </p>
 		</li>
 
 		<li>
 			<div class="image">{% include icons/site.html icon="economy" %}</div>
-			<h3 class="editable">Economy</h3>
-			<p class="editable">Sheep are the backbone of the economy yet they receive no compensation.</p>
+			<h3 class="editable">Long-term impact</h3>
+			<p class="editable">66% of businesses attacked by hackers weren’t confident they could recover.</p>
 		</li>
 
 		<li>
 			<div class="image">{% include icons/site.html icon="conditions" %}</div>
-			<h3 class="editable">Work Conditions</h3>
-			<p class="editable">Sheep are forced to eat grass every day of their life. How about some of variety?</p>
+			<h3 class="editable">Security Manager</h3>
+			<p class="editable">The Security Manager is part of the of your tools to defend the JVM against hackers.</p>
 		</li>
 	</ul>
 </div>
@@ -50,8 +50,7 @@ title: The Sheep Vote
 		</div>
 		<div>
 			<h2 class="editable">Our Mission</h2>
-
-			<p class="editable">Leave no sheep behind. Our mission to give sheep the right to vote and have them represented in parliament. For too long sheep have been exploited for their warm wool and delicious meat. It's time to put our hooves down and baa for what's right. Give sheep the vote!</p>
+			<p class="editable">The JVM offers a lot of capabilities: make network calls, compile code on the fly, run code on the fly, etc. Your application probably doesn't need all of this. Hence, for an attacker, they just represent a welcome attack surface. The Security Manager is the way to apply the least privilege principle to reduce this attack surface via a configuration file. JEP 411 aims to remove the Security Manager with no replacement. Don't be a sheep, fight against the JEP!</p>
 		</div>
 	</div>
 </div>
@@ -69,24 +68,15 @@ title: The Sheep Vote
 	</blockquote>
 </div>
 
-<div class="darker">
+<div class="darker" id="joinus">
 	<div class="container">
 		<h2 class="editable">Join us</h2>
-		<p class="editable" style="text-align: center;">Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
-		<form action="{{ site.newsletter_action }}" method="post">
-			<input type="text" name="EMAIL" placeholder="Email">
-			<input type="submit" value="Sign up"/>
+		<p class="editable" style="text-align: center;">Join our interest group hear the latest news and progress in our fight for the Security Manager.</p>
+		<form>
+			<a href="https://www.reddit.com/r/jep411/">/r/jep411/</a>
 		</form>
 	</div>
 </div>
-
-<div class="container" id="donate">
-	<h2 class="editable">Make a donation</h2>
-	<div class="donate">
-		{{ site.donation_embed }}
-	</div>
-</div>
-
 <div class="darker">
 	<div class="container">
 		<h2 class="editable">Updates</h2>
