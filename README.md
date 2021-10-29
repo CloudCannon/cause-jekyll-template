@@ -9,6 +9,8 @@ CloudCannon was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS fo
 
 Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/cause-jekyll-template)
+
 ## Features
 
 * Pre-built pages
